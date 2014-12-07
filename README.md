@@ -4,6 +4,7 @@ Version ~0.23
 
 This script install and configure all you need for ZpanelX
 
+WARNING : THIS FORK IS NOT FULLY TESTED YET !
 
 Requirement:
 ==============
@@ -13,13 +14,13 @@ Requirement:
 =========
 mkdir -p /usr/local/src/zpanelx && cd /usr/local/src/  
 
-fetch http://sourceforge.net/projects/zpanelcp/files/latest/download
+fetch http://sourceforge.net/projects/zpanelcp/files/latest/download   
 fetch https://github.com/pi0/zpanel-freebsd/archive/master.zip  
 
 unzip -d zpanelx zpanelx-*.zip && unzip master.zip
 
 cp -R zpanel-freebsd-master/* zpanelx/etc/build/  
-rm -R zpanel-freebsd-master master.zip zpanelx-1_0_0.zip  
+rm -R zpanel-freebsd-master master.zip zpanelx-*.zip  
 cd zpanelx/etc/build/  
 vi install-BSD.sh  
 
